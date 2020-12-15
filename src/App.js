@@ -41,7 +41,7 @@ export default function App() {
     var meaning = emojiBucket[userInput];
     // console.log(meaning);
     if (meaning === undefined) {
-      meaning = "We don't have this in our database";
+      meaning = "This Symbol isn't avaliable in our Database!";
     }
     setMeaning(meaning);
   }
