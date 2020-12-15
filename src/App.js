@@ -7,17 +7,17 @@ import "./styles.css";
 // var score = 0;
 
 const emojiBucket = {
-  "😃": "Smiling",
-  "⚽": "FootBall",
-  "🎂": "Birthday Cake",
-  "🏀 ": "Basket Ball",
-  "🏐": "Volly Ball",
-  "🏉": "Roughby Ball",
-  "🎾": "Tennis",
-  "🎳": "Bowling",
-  "🥊": "Boxing",
-  "🎲": "Dice",
-  "🎨": "Painting"
+  "☢": "Radioactive Emoji",
+  "": "Bio Hazard",
+  "🀄": "Mahjong Game Stone “Red Dragon”",
+  "☯": "Yin Yang",
+  "🕎": "Menorah",
+  "🎏": "Carp Streamer",
+  "🌀": "Cyclone",
+  "🚸": "Caution Children",
+  "🔱": "Trident Emblem",
+  "💯": "Hundred Points Symbol",
+  "💢": "Anger Symbol"
 };
 
 var emojisWeKnow = Object.keys(emojiBucket);
@@ -30,7 +30,7 @@ export default function App() {
     var meaning = emojiBucket[userInput];
     // console.log(meaning);
     if (meaning === undefined) {
-      meaning = "We dont have this in our database";
+      meaning = "We don't have this in our database";
     }
     setMeaning(meaning);
   }
@@ -43,7 +43,9 @@ export default function App() {
       <h1>Welcome</h1>
       <input onChange={emojiInputHandler} />
       <h2> {meaning} </h2>
-      <h3> Emojis we know </h3>
+      <h3>
+        <strong>Special Symbols</strong>
+      </h3>
       {emojisWeKnow.map(function (emoji) {
         return (
           <span
