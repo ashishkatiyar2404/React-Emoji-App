@@ -17,7 +17,18 @@ const emojiBucket = {
   "🚸": "Caution Children",
   "🔱": "Trident Emblem",
   "💯": "Hundred Points Symbol",
-  "💢": "Anger Symbol"
+  "💢": "Anger Symbol",
+  "☮": "Peace symbol",
+  "☪": "Star and half moon",
+  "🕉": "Om Symbol",
+  "☯": "Yin Yang",
+  "☸": "Wheel Of Dharma",
+  "✡": "Star Of David",
+  "㊙": "Secret",
+  "㊗": "Congratulations",
+  "⚠": "Warning",
+  "Ⓜ": "Encircled Latin capital M",
+  "🈂 ": "Free Of Charge"
 };
 
 var emojisWeKnow = Object.keys(emojiBucket);
@@ -41,7 +52,11 @@ export default function App() {
   return (
     <div className="App">
       <h1>Welcome</h1>
-      <input onChange={emojiInputHandler} />
+      <input
+        style={{ width: "300px", height: "30px" }}
+        placeholder="Insert the special symbols to see the name it belong to"
+        onChange={emojiInputHandler}
+      />
       <h2> {meaning} </h2>
       <h3>
         <strong>Special Symbols</strong>
