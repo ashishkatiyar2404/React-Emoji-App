@@ -3,7 +3,6 @@ import "./styles.css";
 
 // var userName = "Ashish";
 
-// var color = "red";
 // var score = 0;
 
 const emojiBucket = {
